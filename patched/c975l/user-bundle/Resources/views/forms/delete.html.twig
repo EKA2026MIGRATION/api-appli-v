@@ -1,0 +1,38 @@
+{% extends "@c975LUser/layout.html.twig" %}
+{% trans_default_domain 'user' %}
+{% set title = 'label.delete_account'|trans %}
+
+{% block user_content %}
+{# Toolbar #}
+    {{ toolbar_display('@c975LUser/tools.html.twig', 'delete', 'md', user) }}
+{# Avatar #}
+    {{ user_avatar() }}
+{# Form #}
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+{# Delete account acceptance #}
+        <div class="checkbox">
+            <label for="deleteAccepted" class="required">
+                <input type="checkbox" id="deleteAccepted" name="deleteAccepted" required="required" />
+                {% include('@c975LUser/fragments/deleteAccountInfo.html.twig') %}
+            </label>
+        </div>
+{# Submit #}
+        <div class="form-group">
+            <button type="submit" name="submit" title="{{ 'label.delete'|trans({}, 'toolbar') }}" class="btn btn-lg btn-danger btn-block">
+                {{ 'label.delete'|trans({}, 'toolbar') }}
+            </button>
+        </div>
+{# Cancel #}
+        <p class="text-center">
+            <a href="#" onclick="javascript:history.back(); return false;" title="{{ 'label.cancel'|trans({}, 'toolbar') }}">
+                {{ 'label.cancel'|trans({}, 'toolbar') }}</a>
+        </p>
+    {{ form_end(form) }}
+{# Mandatory field #}
+    <p class="text-muted">
+        <em>
+            {{ 'label.mandatory_field'|trans({}, 'services') }}
+        </em>
+    </p>
+{% endblock %}

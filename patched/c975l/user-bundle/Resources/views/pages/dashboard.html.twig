@@ -1,0 +1,67 @@
+{% extends "@c975LUser/layout.html.twig" %}
+{% trans_default_domain 'user' %}
+{% set title = 'label.dashboard'|trans({}, 'toolbar') %}
+
+{% block user_content %}
+{# Toolbar #}
+    {{ toolbar_display('@c975LUser/tools.html.twig', 'dashboard', 'md', user) }}
+{# Avatar #}
+    {{ user_avatar() }}
+{# Actions #}
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{ 'label.actions'|trans }}</h3>
+            </div>
+            <div class="panel-body">
+{# User's personalised dashboard actions #}
+                {% include('@c975LUser/fragments/dashboardActions.html.twig') %}
+{# Profile title #}
+                <h3>
+                    {{ 'label.profile'|trans }}
+                </h3>
+{# View profile #}
+                <p>
+                    {{ toolbar_button_text(path('user_display'), 'display') }}
+                </p>
+{# View public profile #}
+                {% if publicProfile == true %}
+                    <p>
+                        {{ toolbar_button_text(path('user_public_profile', {'identifier': user.identifier}), 'public_profile') }}
+                    </p>
+                {% endif %}
+{# Modify profile #}
+                <p>
+                    {{ toolbar_button_text(path('user_modify'), 'modify') }}
+                </p>
+{# Export data #}
+                <p>
+                    {{ toolbar_button_text(path('user_export', {'format': 'xml'}), 'export_xml') }}
+                    {{ toolbar_button_text(path('user_export', {'format': 'json'}), 'export_json') }}
+                </p>
+{# Change password #}
+                <p>
+                    {{ toolbar_button_text(path('user_change_password'), 'change_password') }}
+                </p>
+{# Delete account #}
+                <p>
+                    {{ toolbar_button_text(path('user_delete'), 'delete') }}
+                </p>
+{# Sign out #}
+                <p>
+                    {{ toolbar_button_text(path('user_signout'), 'signout') }}
+                </p>
+{# Manage title #}
+                <h3>
+                    {{ 'label.manage'|trans({}, 'toolbar') }}
+                </h3>
+{# User's managment #}
+                {% if is_granted(config('c975LUser.roleNeeded')) %}
+                    <p>
+                        {{ toolbar_button_text(path('user_manage'), 'users') }}
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

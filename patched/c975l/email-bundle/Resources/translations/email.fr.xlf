@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="email.en.xlf">
+        <body>
+            <trans-unit id="1">
+                <source>label.subject</source>
+                <target>Sujet</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>label.sent_date</source>
+                <target>Date d'envoi</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>text.list_emails</source>
+                <target>Liste des emails</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>label.no_emails</source>
+                <target>Pas d'emails</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>label.sent_to</source>
+                <target>Envoyé à</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>label.message</source>
+                <target>Message</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>text.email_sent_by</source>
+                <target><![CDATA[Cet email vous a été envoyé par <strong>%site%</strong>.]]></target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>label.hello</source>
+                <target>Bonjour</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>text.thanks_confidence</source>
+                <target><![CDATA[Merci pour votre confiance !
+                        Nous restons à votre disposition pour la moindre demande.]]></target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>text.no_spam</source>
+                <target><![CDATA[Nous conseillons d'enregistrer notre adresse email "%email%" dans votre carnet d'adresses afin que nos emails ne soient pas classés spam.]]></target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>text.regards_team</source>
+                <target><![CDATA[Cordialement,
+                        L'équipe <strong>%site%</strong>]]></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

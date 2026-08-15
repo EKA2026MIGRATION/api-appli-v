@@ -1,0 +1,16 @@
+ReadMe
+
+Cette API a été faite avec Symfony 4.2, elle utilise différents bundles et notamment c975L/UserBundle (https://github.com/975L/UserBundle) pour la gestion des utilisateurs.
+
+En cas de ré-installation il est nécessaire d'installer tous les bundles via `composer install` puis de lancer la commande `php bin/console config:create` afin de créer les paramètres de configuration, il faudra les modifier dans le fichier `/config/config_bundles.yaml` si nécessaire et lancer ensuite un nettoyage du cache.
+
+Un script bash de sauvegarde des bases de données est lancé par une crontab, ce script nécessite un fichier de configuration `/config/backup_config.cnf`, voir c975L/ServicesBundle (https://github.com/975L/ServicesBundle/tree/master/Scripts)
+
+L'entité `Parameter` est liée à la table `parameter`. Elle n'a pas de CRUD et est donc uniquement modifiable en passant par le serveur MySql. On récupère les différents paramètres en passant par les méthodes de `ParameterRepository`.
+
+En cas de problème
+Contact
+Laurent Marquet
+laurent.marquet@laposte.net
++33 6 08 46 35 02
+https://975l.com

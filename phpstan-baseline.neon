@@ -1,0 +1,3211 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$request$#'
+			identifier: parameter.notFound
+			count: 2
+			path: src/Controller/ChallengeChildResultController.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$request$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Controller/FootMatchResultController.php
+
+		-
+			message: '#^Access to an undefined property App\\Controller\\ReminderController\:\:\$reminderService\.$#'
+			identifier: property.notFound
+			count: 5
+			path: src/Controller/ReminderController.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$request$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Controller/StatistiqueController.php
+
+		-
+			message: '#^Method App\\Entity\\Booklet\:\:getIsActive\(\) should return bool but returns int\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/Booklet.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$isActive with type bool is incompatible with native type int\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/Booklet.php
+
+		-
+			message: '#^Property App\\Entity\\Booklet\:\:\$isActive type mapping mismatch\: database can contain bool but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Booklet.php
+
+		-
+			message: '#^Property App\\Entity\\Booklet\:\:\$isActive type mapping mismatch\: property can contain int but database expects bool\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Booklet.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$isActive with type bool is incompatible with native type int\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/BookletBoard.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$photo2$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Entity/BookletBoard.php
+
+		-
+			message: '#^Property App\\Entity\\BookletBoard\:\:\$booklet type mapping mismatch\: database can contain App\\Entity\\Booklet\|null but property expects App\\Entity\\Booklet\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/BookletBoard.php
+
+		-
+			message: '#^Property App\\Entity\\BookletBoard\:\:\$isActive \(bool\) does not accept int\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/BookletBoard.php
+
+		-
+			message: '#^Property App\\Entity\\BookletChild\:\:\$booklet type mapping mismatch\: database can contain App\\Entity\\Booklet\|null but property expects App\\Entity\\Booklet\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/BookletChild.php
+
+		-
+			message: '#^Property App\\Entity\\BookletChild\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/BookletChild.php
+
+		-
+			message: '#^Property App\\Entity\\BookletChild\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/BookletChild.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$booklet_child$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Entity/BookletChildAnswer.php
+
+		-
+			message: '#^Property App\\Entity\\BookletChildAnswer\:\:\$bookletChild type mapping mismatch\: database can contain App\\Entity\\BookletChild\|null but property expects App\\Entity\\BookletChild\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/BookletChildAnswer.php
+
+		-
+			message: '#^Property App\\Entity\\CallTwilio\:\:\$callDate type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/CallTwilio.php
+
+		-
+			message: '#^Property App\\Entity\\CallTwilio\:\:\$callTime type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/CallTwilio.php
+
+		-
+			message: '#^Property App\\Entity\\CallTwilio\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/CallTwilio.php
+
+		-
+			message: '#^Call to an undefined method App\\Entity\\Product\:\:getCategory\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Entity/Category.php
+
+		-
+			message: '#^Call to an undefined method App\\Entity\\Product\:\:setCategory\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Entity/Category.php
+
+		-
+			message: '#^Property App\\Entity\\ChallengeChildBonus\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChallengeChildBonus.php
+
+		-
+			message: '#^Property App\\Entity\\ChallengeChildBonus\:\:\$season type mapping mismatch\: database can contain App\\Entity\\Season\|null but property expects App\\Entity\\Season\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChallengeChildBonus.php
+
+		-
+			message: '#^Property App\\Entity\\ChallengeChildResult\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChallengeChildResult.php
+
+		-
+			message: '#^Property App\\Entity\\ChallengeChildResult\:\:\$season type mapping mismatch\: database can contain App\\Entity\\Season\|null but property expects App\\Entity\\Season\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChallengeChildResult.php
+
+		-
+			message: '#^Method App\\Entity\\Child\:\:getDateLatestMedia\(\) should return DateTime\|null but returns string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/Child.php
+
+		-
+			message: '#^Property App\\Entity\\Child\:\:\$dateLatestMedia \(string\|null\) does not accept DateTime\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Child.php
+
+		-
+			message: '#^Property App\\Entity\\Child\:\:\$dateLatestMedia type mapping mismatch\: database can contain DateTime\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Child.php
+
+		-
+			message: '#^Property App\\Entity\\Child\:\:\$dateLatestMedia type mapping mismatch\: property can contain string\|null but database expects DateTimeInterface\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Child.php
+
+		-
+			message: '#^Property App\\Entity\\Child\:\:\$familyId type mapping mismatch\: database can contain int\|null but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Child.php
+
+		-
+			message: '#^Property App\\Entity\\Child\:\:\$school type mapping mismatch\: database can contain App\\Entity\\School\|null but property expects App\\Entity\\School\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Child.php
+
+		-
+			message: '#^Property App\\Entity\\ChildChildLink\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildChildLink.php
+
+		-
+			message: '#^Property App\\Entity\\ChildChildLink\:\:\$sibling type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildChildLink.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPersonLink\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPersonLink\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$end \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$end type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$lastDayOfWeek \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$lastDayOfWeek type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$registration type mapping mismatch\: database can contain App\\Entity\\Registration\|null but property expects App\\Entity\\Registration\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\ChildPresence\:\:\$statusChange \(DateTime\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ChildPresence.php
+
+		-
+			message: '#^Property App\\Entity\\CredentialRole\:\:\$credential type mapping mismatch\: database can contain App\\Entity\\Credential\|null but property expects App\\Entity\\Credential\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/CredentialRole.php
+
+		-
+			message: '#^Property App\\Entity\\CredentialStaff\:\:\$credential type mapping mismatch\: database can contain App\\Entity\\Credential\|null but property expects App\\Entity\\Credential\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/CredentialStaff.php
+
+		-
+			message: '#^Property App\\Entity\\CredentialStaff\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/CredentialStaff.php
+
+		-
+			message: '#^Property App\\Entity\\Device\:\:\$identifier type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Device.php
+
+		-
+			message: '#^Method App\\Entity\\DriverPriority\:\:getStaff\(\) should return App\\Entity\\Staff\|null but returns string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/DriverPriority.php
+
+		-
+			message: '#^Property App\\Entity\\DriverPriority\:\:\$staff \(string\|null\) does not accept App\\Entity\\Staff\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/DriverPriority.php
+
+		-
+			message: '#^Property App\\Entity\\DriverZone\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/DriverZone.php
+
+		-
+			message: '#^Property App\\Entity\\DriverZone\:\:\$priority type mapping mismatch\: database can contain int\|null but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/DriverZone.php
+
+		-
+			message: '#^Property App\\Entity\\DriverZone\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/DriverZone.php
+
+		-
+			message: '#^Property App\\Entity\\DriverZone\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/DriverZone.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$day type mapping mismatch\: database can contain DateTime\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$day type mapping mismatch\: property can contain string\|null but database expects DateTimeInterface\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$description \(array\|null\) does not accept string\|false\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$description type mapping mismatch\: database can contain string\|null but property expects array\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$description type mapping mismatch\: property can contain array\|null but database expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$season type mapping mismatch\: database can contain App\\Entity\\Season\|null but property expects App\\Entity\\Season\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$time type mapping mismatch\: database can contain DateTime\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatch\:\:\$time type mapping mismatch\: property can contain string\|null but database expects DateTimeInterface\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/FootMatch.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatchResult\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/FootMatchResult.php
+
+		-
+			message: '#^Property App\\Entity\\FootMatchResult\:\:\$footMatch type mapping mismatch\: database can contain App\\Entity\\FootMatch\|null but property expects App\\Entity\\FootMatch\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/FootMatchResult.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$end \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$end type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$sport type mapping mismatch\: database can contain App\\Entity\\Sport\|null but property expects App\\Entity\\Sport\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivity\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/GroupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivityStaffLink\:\:\$groupActivity type mapping mismatch\: database can contain App\\Entity\\GroupActivity\|null but property expects App\\Entity\\GroupActivity\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/GroupActivityStaffLink.php
+
+		-
+			message: '#^Property App\\Entity\\GroupActivityStaffLink\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/GroupActivityStaffLink.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricPersonAction\:\:\$action type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricPersonAction.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricPersonAction\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/HistoricPersonAction.php
+
+		-
+			message: '#^Method App\\Entity\\HistoricSms\:\:setId\(\) should return int\|null but returns \$this\(App\\Entity\\HistoricSms\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$content type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$dateSended \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$dateSended type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$name type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$signature type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$status type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$timeSended \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSms\:\:\$timeSended type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSms.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$dateSended \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$dateSended type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$historicSms type mapping mismatch\: database can contain App\\Entity\\HistoricSms\|null but property expects App\\Entity\\HistoricSms\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$phone type mapping mismatch\: database can contain App\\Entity\\Phone\|null but property expects App\\Entity\\Phone\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$phoneName type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$phoneNumber type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$timeSended \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\HistoricSmsList\:\:\$timeSended type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/HistoricSmsList.php
+
+		-
+			message: '#^Property App\\Entity\\Invoice\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Invoice.php
+
+		-
+			message: '#^Property App\\Entity\\Invoice\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Invoice.php
+
+		-
+			message: '#^Property App\\Entity\\Invoice\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Invoice.php
+
+		-
+			message: '#^Property App\\Entity\\Invoice\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Invoice.php
+
+		-
+			message: '#^Property App\\Entity\\Invoice\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Invoice.php
+
+		-
+			message: '#^Property App\\Entity\\Invoice\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Invoice.php
+
+		-
+			message: '#^Property App\\Entity\\InvoiceComponent\:\:\$invoiceProduct type mapping mismatch\: database can contain App\\Entity\\InvoiceProduct\|null but property expects App\\Entity\\InvoiceProduct\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/InvoiceComponent.php
+
+		-
+			message: '#^Property App\\Entity\\InvoiceProduct\:\:\$invoice type mapping mismatch\: database can contain App\\Entity\\Invoice\|null but property expects App\\Entity\\Invoice\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/InvoiceProduct.php
+
+		-
+			message: '#^Property App\\Entity\\Location\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Location.php
+
+		-
+			message: '#^Property App\\Entity\\Meal\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Meal.php
+
+		-
+			message: '#^Property App\\Entity\\Meal\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Meal.php
+
+		-
+			message: '#^Property App\\Entity\\Meal\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Meal.php
+
+		-
+			message: '#^Property App\\Entity\\Meal\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Meal.php
+
+		-
+			message: '#^Property App\\Entity\\MealFoodLink\:\:\$food type mapping mismatch\: database can contain App\\Entity\\Food\|null but property expects App\\Entity\\Food\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/MealFoodLink.php
+
+		-
+			message: '#^Property App\\Entity\\MealFoodLink\:\:\$meal type mapping mismatch\: database can contain App\\Entity\\Meal\|null but property expects App\\Entity\\Meal\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/MealFoodLink.php
+
+		-
+			message: '#^Property App\\Entity\\Media\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Media.php
+
+		-
+			message: '#^Property App\\Entity\\Notification\:\:\$dateNotification \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Notification.php
+
+		-
+			message: '#^Property App\\Entity\\Notification\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Notification.php
+
+		-
+			message: '#^Property App\\Entity\\NotificationPersonLink\:\:\$notification type mapping mismatch\: database can contain App\\Entity\\Notification\|null but property expects App\\Entity\\Notification\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/NotificationPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\NotificationPersonLink\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/NotificationPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\PersonAddressLink\:\:\$address type mapping mismatch\: database can contain App\\Entity\\Address\|null but property expects App\\Entity\\Address\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PersonAddressLink.php
+
+		-
+			message: '#^Property App\\Entity\\PersonAddressLink\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PersonAddressLink.php
+
+		-
+			message: '#^Property App\\Entity\\PersonPersonLink\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PersonPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\PersonPersonLink\:\:\$related type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PersonPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\PersonPhoneLink\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PersonPhoneLink.php
+
+		-
+			message: '#^Property App\\Entity\\PersonPhoneLink\:\:\$phone type mapping mismatch\: database can contain App\\Entity\\Phone\|null but property expects App\\Entity\\Phone\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PersonPhoneLink.php
+
+		-
+			message: '#^Property App\\Entity\\Phone\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Phone.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$lastDayOfWeek \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$lastDayOfWeek type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$registration type mapping mismatch\: database can contain App\\Entity\\Registration\|null but property expects App\\Entity\\Registration\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$ride type mapping mismatch\: database can contain App\\Entity\\Ride\|null but property expects App\\Entity\\Ride\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$smsSentData type mapping mismatch\: database can contain string\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$start \(DateTime\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$statusChange \(DateTime\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\Pickup\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Pickup.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$end \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$end type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$lastDayOfWeek \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$lastDayOfWeek type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$registration type mapping mismatch\: database can contain App\\Entity\\Registration\|null but property expects App\\Entity\\Registration\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$sport type mapping mismatch\: database can contain App\\Entity\\Sport\|null but property expects App\\Entity\\Sport\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivity\:\:\$statusChange \(DateTime\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/PickupActivity.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivityGroupActivityLink\:\:\$groupActivity type mapping mismatch\: database can contain App\\Entity\\GroupActivity\|null but property expects App\\Entity\\GroupActivity\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PickupActivityGroupActivityLink.php
+
+		-
+			message: '#^Property App\\Entity\\PickupActivityGroupActivityLink\:\:\$pickupActivity type mapping mismatch\: database can contain App\\Entity\\PickupActivity\|null but property expects App\\Entity\\PickupActivity\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PickupActivityGroupActivityLink.php
+
+		-
+			message: '#^Method App\\Entity\\Product\:\:getMail\(\) should return App\\Entity\\Mail\|null but returns App\\Entity\\Child\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$family type mapping mismatch\: database can contain App\\Entity\\Family\|null but property expects App\\Entity\\Family\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$frontMenu type mapping mismatch\: property can contain int\|null but database expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$hourDropin \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$hourDropin type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$hourDropoff \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$hourDropoff type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$mail \(App\\Entity\\Child\) does not accept App\\Entity\\Mail\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$mail type mapping mismatch\: database can contain App\\Entity\\Mail\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$mail type mapping mismatch\: property can contain App\\Entity\\Child but database expects App\\Entity\\Mail\|null\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$season type mapping mismatch\: database can contain App\\Entity\\Season\|null but property expects App\\Entity\\Season\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Property App\\Entity\\Product\:\:\$totals \(string\) does not accept array\<string, mixed\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Product.php
+
+		-
+			message: '#^Access to an undefined property App\\Entity\\ProductCancelledDate\:\:\$registrations\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCancelledDate\:\:\$category type mapping mismatch\: database can contain App\\Entity\\Category\|null but property expects App\\Entity\\Category\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCancelledDate\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCancelledDate\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCancelledDate\:\:\$messageEn type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCancelledDate\:\:\$messageFr type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCancelledDate\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductCancelledDate.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCategoryLink\:\:\$category type mapping mismatch\: database can contain App\\Entity\\Category\|null but property expects App\\Entity\\Category\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductCategoryLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductCategoryLink\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductCategoryLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductComponent\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductComponent.php
+
+		-
+			message: '#^Property App\\Entity\\ProductDateLink\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ProductDateLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductDateLink\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductDateLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductDateLink\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductDateLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductHourLink\:\:\$end \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ProductHourLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductHourLink\:\:\$end type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductHourLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductHourLink\:\:\$isFull type mapping mismatch\: database can contain bool\|null but property expects bool\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductHourLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductHourLink\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductHourLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductHourLink\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/ProductHourLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductHourLink\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/ProductHourLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductLocationLink\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductLocationLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductLocationLink\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductLocationLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductSportLink\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductSportLink.php
+
+		-
+			message: '#^Property App\\Entity\\ProductSportLink\:\:\$sport type mapping mismatch\: database can contain App\\Entity\\Sport\|null but property expects App\\Entity\\Sport\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/ProductSportLink.php
+
+		-
+			message: '#^Property App\\Entity\\PushNotification\:\:\$user type mapping mismatch\: database can contain App\\Entity\\User\|null but property expects App\\Entity\\User\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/PushNotification.php
+
+		-
+			message: '#^Property App\\Entity\\Rdv\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Rdv.php
+
+		-
+			message: '#^Property App\\Entity\\Rdv\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Rdv.php
+
+		-
+			message: '#^Method App\\Entity\\Registration\:\:getInvoice\(\) should return int\|null but returns string\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$address with type string\|null is incompatible with native type App\\Entity\\Address\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$address type mapping mismatch\: database can contain App\\Entity\\Address\|null but property expects App\\Entity\\Address\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$invoice \(string\) does not accept int\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$invoice type mapping mismatch\: database can contain int\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$invoice type mapping mismatch\: property can contain string but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$product type mapping mismatch\: database can contain App\\Entity\\Product\|null but property expects App\\Entity\\Product\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$registration \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\Registration\:\:\$transaction type mapping mismatch\: database can contain App\\Entity\\Transaction\|null but property expects App\\Entity\\Transaction\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Registration.php
+
+		-
+			message: '#^Property App\\Entity\\RegistrationSportLink\:\:\$registration type mapping mismatch\: database can contain App\\Entity\\Registration\|null but property expects App\\Entity\\Registration\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/RegistrationSportLink.php
+
+		-
+			message: '#^Property App\\Entity\\RegistrationSportLink\:\:\$sport type mapping mismatch\: database can contain App\\Entity\\Sport\|null but property expects App\\Entity\\Sport\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/RegistrationSportLink.php
+
+		-
+			message: '#^Property App\\Entity\\Reminder\:\:\$dateReminder \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Reminder.php
+
+		-
+			message: '#^Property App\\Entity\\Reminder\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Reminder.php
+
+		-
+			message: '#^Property App\\Entity\\Reminder\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Reminder.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$arrival \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$arrival type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$linkedRide type mapping mismatch\: database can contain App\\Entity\\Ride\|null but property expects App\\Entity\\Ride\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Ride\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ride.php
+
+		-
+			message: '#^Property App\\Entity\\Season\:\:\$dateEnd \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Season.php
+
+		-
+			message: '#^Property App\\Entity\\Season\:\:\$dateEnd type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Season.php
+
+		-
+			message: '#^Property App\\Entity\\Season\:\:\$dateStart \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Season.php
+
+		-
+			message: '#^Property App\\Entity\\Season\:\:\$dateStart type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Season.php
+
+		-
+			message: '#^Property App\\Entity\\Season\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Season.php
+
+		-
+			message: '#^Property App\\Entity\\Season\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Season.php
+
+		-
+			message: '#^Property App\\Entity\\Sport\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Sport.php
+
+		-
+			message: '#^Access to an undefined property App\\Entity\\Staff\:\:\$notificationLinks\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$address type mapping mismatch\: database can contain App\\Entity\\Address\|null but property expects App\\Entity\\Address\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$isSupervisor type mapping mismatch\: database can contain string\|null but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$isSupervisor type mapping mismatch\: property can contain int but database expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$kind type mapping mismatch\: database can contain string\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$maxChildren type mapping mismatch\: database can contain int\|null but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$priority type mapping mismatch\: database can contain int\|null but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Property App\\Entity\\Staff\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Staff.php
+
+		-
+			message: '#^Method App\\Entity\\StaffPresence\:\:getLocation\(\) should return App\\Entity\\Location but returns App\\Entity\\Season\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$end \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$end type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$location \(App\\Entity\\Season\) does not accept App\\Entity\\Location\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Season\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$location type mapping mismatch\: property can contain App\\Entity\\Season but database expects App\\Entity\\Location\|null\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StaffPresence\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StaffPresence.php
+
+		-
+			message: '#^Property App\\Entity\\StatsAnalyseStrat\:\:\$createdAt type mapping mismatch\: database can contain DateTime\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StatsAnalyseStrat.php
+
+		-
+			message: '#^Property App\\Entity\\StatsAnalyseStrat\:\:\$createdAt type mapping mismatch\: property can contain string\|null but database expects DateTimeInterface\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StatsAnalyseStrat.php
+
+		-
+			message: '#^Property App\\Entity\\StatsAnalyseStrat\:\:\$name type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StatsAnalyseStrat.php
+
+		-
+			message: '#^Constant stockProducts not found\.$#'
+			identifier: constant.notFound
+			count: 2
+			path: src/Entity/StockCategory.php
+
+		-
+			message: '#^Property App\\Entity\\StockCategory\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StockCategory.php
+
+		-
+			message: '#^Access to an undefined property App\\Entity\\StockOrder\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Method App\\Entity\\StockOrder\:\:getQuantity\(\) should return int\|null but returns string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Method App\\Entity\\StockOrder\:\:getStockProduct\(\) should return App\\Entity\\StockProduct but returns PhpParser\\Node\\Expr\\Cast\\Object_\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$quantity with type string\|null is incompatible with native type int\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$productRef$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$quantity$#'
+			identifier: parameter.notFound
+			count: 2
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^PHPDoc tag @return with type PhpParser\\Node\\Expr\\Cast\\Object_ is incompatible with native type App\\Entity\\StockProduct\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^PHPDoc tag @return with type string\|null is not subtype of native type int\|null\.$#'
+			identifier: return.phpDocType
+			count: 3
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Property App\\Entity\\StockOrder\:\:\$quantity \(string\|null\) does not accept int\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Property App\\Entity\\StockOrder\:\:\$quantity type mapping mismatch\: database can contain int\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Property App\\Entity\\StockOrder\:\:\$quantity type mapping mismatch\: property can contain string\|null but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Property App\\Entity\\StockOrder\:\:\$stockProduct \(PhpParser\\Node\\Expr\\Cast\\Object_\) does not accept App\\Entity\\StockProduct\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Property App\\Entity\\StockOrder\:\:\$stockProduct type mapping mismatch\: database can contain App\\Entity\\StockProduct\|null but property expects PhpParser\\Node\\Expr\\Cast\\Object_\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Property App\\Entity\\StockOrder\:\:\$stockProduct type mapping mismatch\: property can contain PhpParser\\Node\\Expr\\Cast\\Object_ but database expects App\\Entity\\StockProduct\|null\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StockOrder.php
+
+		-
+			message: '#^Method App\\Entity\\StockProduct\:\:getCategory\(\) should return App\\Entity\\StockCategory but returns PhpParser\\Node\\Expr\\Cast\\Object_\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$barCode with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$conditioning with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$currentStock with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$imageUrl with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$minimumStock with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$price with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$restockLevel with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$unity with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$stockCategory$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @return with type PhpParser\\Node\\Expr\\Cast\\Object_ is incompatible with native type App\\Entity\\StockCategory\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^PHPDoc tag @return with type string\|null is not subtype of native type string\.$#'
+			identifier: return.phpDocType
+			count: 7
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^Property App\\Entity\\StockProduct\:\:\$category \(PhpParser\\Node\\Expr\\Cast\\Object_\) does not accept App\\Entity\\StockCategory\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^Property App\\Entity\\StockProduct\:\:\$category type mapping mismatch\: database can contain App\\Entity\\StockCategory\|null but property expects PhpParser\\Node\\Expr\\Cast\\Object_\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^Property App\\Entity\\StockProduct\:\:\$category type mapping mismatch\: property can contain PhpParser\\Node\\Expr\\Cast\\Object_ but database expects App\\Entity\\StockCategory\|null\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^Property App\\Entity\\StockProduct\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/StockProduct.php
+
+		-
+			message: '#^Method App\\Entity\\StockProductInventory\:\:getProductRef\(\) should return App\\Entity\\StockProduct but returns PhpParser\\Node\\Expr\\Cast\\Object_\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$barCode with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$categoryName with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$conditioning with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$currentStock with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$imageUrl with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$minimumStock with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$price with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$productRef with type PhpParser\\Node\\Expr\\Cast\\Object_ is incompatible with native type App\\Entity\\StockProduct\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$unity with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @return with type PhpParser\\Node\\Expr\\Cast\\Object_ is incompatible with native type App\\Entity\\StockProduct\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^PHPDoc tag @return with type string\|null is not subtype of native type string\.$#'
+			identifier: return.phpDocType
+			count: 8
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^Property App\\Entity\\StockProductInventory\:\:\$productRef \(PhpParser\\Node\\Expr\\Cast\\Object_\) does not accept App\\Entity\\StockProduct\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^Property App\\Entity\\StockProductInventory\:\:\$productRef type mapping mismatch\: database can contain App\\Entity\\StockProduct\|null but property expects PhpParser\\Node\\Expr\\Cast\\Object_\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^Property App\\Entity\\StockProductInventory\:\:\$productRef type mapping mismatch\: property can contain PhpParser\\Node\\Expr\\Cast\\Object_ but database expects App\\Entity\\StockProduct\|null\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/StockProductInventory.php
+
+		-
+			message: '#^Method App\\Entity\\Survey\:\:getIsActive\(\) should return bool but returns int\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/Survey.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$isActive with type bool is incompatible with native type int\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/Survey.php
+
+		-
+			message: '#^Property App\\Entity\\Survey\:\:\$isActive type mapping mismatch\: database can contain bool but property expects int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Survey.php
+
+		-
+			message: '#^Property App\\Entity\\Survey\:\:\$isActive type mapping mismatch\: property can contain int but database expects bool\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Survey.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$isActive with type bool is incompatible with native type int\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Entity/SurveyChapter.php
+
+		-
+			message: '#^Property App\\Entity\\SurveyChapter\:\:\$isActive \(bool\) does not accept int\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/SurveyChapter.php
+
+		-
+			message: '#^Property App\\Entity\\SurveyChapter\:\:\$survey type mapping mismatch\: database can contain App\\Entity\\Survey\|null but property expects App\\Entity\\Survey\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveyChapter.php
+
+		-
+			message: '#^Method App\\Entity\\Child\:\:toArray\(\) invoked with 1 parameter, 0 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Method App\\Entity\\ChildPresence\:\:toArray\(\) invoked with 1 parameter, 0 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Method App\\Entity\\Registration\:\:toArray\(\) invoked with 1 parameter, 0 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Method App\\Entity\\Survey\:\:toArray\(\) invoked with 1 parameter, 0 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$Survey$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Property App\\Entity\\SurveySession\:\:\$child type mapping mismatch\: database can contain App\\Entity\\Child\|null but property expects App\\Entity\\Child\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Property App\\Entity\\SurveySession\:\:\$childPresence type mapping mismatch\: database can contain App\\Entity\\ChildPresence\|null but property expects App\\Entity\\ChildPresence\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Property App\\Entity\\SurveySession\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Property App\\Entity\\SurveySession\:\:\$registration type mapping mismatch\: database can contain App\\Entity\\Registration\|null but property expects App\\Entity\\Registration\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^Property App\\Entity\\SurveySession\:\:\$survey type mapping mismatch\: database can contain App\\Entity\\Survey\|null but property expects App\\Entity\\Survey\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveySession.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$notation$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Entity/SurveyStaffNotation.php
+
+		-
+			message: '#^Property App\\Entity\\SurveyStaffNotation\:\:\$session type mapping mismatch\: database can contain App\\Entity\\SurveySession\|null but property expects App\\Entity\\SurveySession\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveyStaffNotation.php
+
+		-
+			message: '#^Property App\\Entity\\SurveyStaffNotation\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveyStaffNotation.php
+
+		-
+			message: '#^Property App\\Entity\\SurveyStaffNotation\:\:\$survey type mapping mismatch\: database can contain App\\Entity\\Survey\|null but property expects App\\Entity\\Survey\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/SurveyStaffNotation.php
+
+		-
+			message: '#^Property App\\Entity\\TaskStaff\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/TaskStaff.php
+
+		-
+			message: '#^Property App\\Entity\\TaskStaff\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/TaskStaff.php
+
+		-
+			message: '#^Property App\\Entity\\TaskStaff\:\:\$supervisor type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/TaskStaff.php
+
+		-
+			message: '#^Property App\\Entity\\Television\:\:\$end \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Television.php
+
+		-
+			message: '#^Property App\\Entity\\Television\:\:\$end type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Television.php
+
+		-
+			message: '#^Property App\\Entity\\Television\:\:\$module type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Television.php
+
+		-
+			message: '#^Property App\\Entity\\Television\:\:\$start \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Television.php
+
+		-
+			message: '#^Property App\\Entity\\Television\:\:\$start type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Television.php
+
+		-
+			message: '#^Class App\\Entity\\TaskStaff referenced with incorrect case\: App\\Entity\\taskStaff\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: src/Entity/Ticket.php
+
+		-
+			message: '#^Property App\\Entity\\Ticket\:\:\$category type mapping mismatch\: database can contain App\\Entity\\Category\|null but property expects App\\Entity\\Category\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ticket.php
+
+		-
+			message: '#^Property App\\Entity\\Ticket\:\:\$location type mapping mismatch\: database can contain App\\Entity\\Location\|null but property expects App\\Entity\\Location\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ticket.php
+
+		-
+			message: '#^Property App\\Entity\\Ticket\:\:\$rdv type mapping mismatch\: database can contain App\\Entity\\Rdv\|null but property expects App\\Entity\\Rdv\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ticket.php
+
+		-
+			message: '#^Property App\\Entity\\Ticket\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ticket.php
+
+		-
+			message: '#^Property App\\Entity\\Ticket\:\:\$taskStaff type mapping mismatch\: database can contain App\\Entity\\TaskStaff\|null but property expects App\\Entity\\TaskStaff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Ticket.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$date \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$date type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$internalOrder type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$invoice type mapping mismatch\: database can contain App\\Entity\\Invoice\|null but property expects App\\Entity\\Invoice\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$number type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\Transaction\:\:\$status type mapping mismatch\: property can contain string\|null but database expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Transaction.php
+
+		-
+			message: '#^Property App\\Entity\\User\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/User.php
+
+		-
+			message: '#^Property App\\Entity\\User\:\:\$devices type mapping mismatch\: property can contain Doctrine\\Common\\Collections\\Collection but database expects Doctrine\\Common\\Collections\\Collection&iterable\<App\\Entity\\Device\>\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/User.php
+
+		-
+			message: '#^Property App\\Entity\\UserPersonLink\:\:\$person type mapping mismatch\: database can contain App\\Entity\\Person\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/UserPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\UserPersonLink\:\:\$user type mapping mismatch\: database can contain App\\Entity\\User\|null but property expects App\\Entity\\User\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/UserPersonLink.php
+
+		-
+			message: '#^Property App\\Entity\\Vehicle\:\:\$suppressedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Vehicle.php
+
+		-
+			message: '#^Property App\\Entity\\Vehicle\:\:\$updatedAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Vehicle.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$amount type mapping mismatch\: database can contain float but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$amount type mapping mismatch\: property can contain string but database expects float\|int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$mileage type mapping mismatch\: database can contain int\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$mileage type mapping mismatch\: property can contain string\|null but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$quantity type mapping mismatch\: database can contain float but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$quantity type mapping mismatch\: property can contain string but database expects float\|int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleAction\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleAction.php
+
+		-
+			message: '#^Method App\\Entity\\VehicleCheckup\:\:getIsOk\(\) should return int\|null but returns string\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckup\:\:\$comment type mapping mismatch\: database can contain string\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckup\:\:\$isOk type mapping mismatch\: database can contain int\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckup\:\:\$isOk type mapping mismatch\: property can contain string but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckup\:\:\$items type mapping mismatch\: property can contain Doctrine\\Common\\Collections\\ArrayCollection but database expects Doctrine\\Common\\Collections\\Collection&iterable\<App\\Entity\\VehicleCheckupItem\>\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckup\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckup\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Undefined variable\: \$items$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Entity/VehicleCheckup.php
+
+		-
+			message: '#^Method App\\Entity\\VehicleCheckupItem\:\:getIsOk\(\) should return int\|null but returns string\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/VehicleCheckupItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckupItem\:\:\$checkup type mapping mismatch\: database can contain App\\Entity\\VehicleCheckup\|null but property expects App\\Entity\\VehicleCheckup\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleCheckupItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckupItem\:\:\$isOk type mapping mismatch\: database can contain int\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleCheckupItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckupItem\:\:\$isOk type mapping mismatch\: property can contain string but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleCheckupItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleCheckupItem\:\:\$item type mapping mismatch\: database can contain App\\Entity\\VehicleItem\|null but property expects App\\Entity\\VehicleItem\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleCheckupItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$amount type mapping mismatch\: database can contain float but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$amount type mapping mismatch\: property can contain string but database expects float\|int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$mileage type mapping mismatch\: database can contain int\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$mileage type mapping mismatch\: property can contain string\|null but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$quantity type mapping mismatch\: database can contain float but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$quantity type mapping mismatch\: property can contain string but database expects float\|int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleFuel\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleFuel.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleItem\:\:\$constantKey type mapping mismatch\: database can contain string\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleItem\:\:\$description type mapping mismatch\: database can contain string\|null but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleItem.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleWashing\:\:\$amount type mapping mismatch\: database can contain float but property expects string\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleWashing.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleWashing\:\:\$amount type mapping mismatch\: property can contain string but database expects float\|int\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleWashing.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleWashing\:\:\$mileage type mapping mismatch\: database can contain int\|null but property expects string\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleWashing.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleWashing\:\:\$mileage type mapping mismatch\: property can contain string\|null but database expects int\|null\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/VehicleWashing.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleWashing\:\:\$staff type mapping mismatch\: database can contain App\\Entity\\Staff\|null but property expects App\\Entity\\Staff\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleWashing.php
+
+		-
+			message: '#^Property App\\Entity\\VehicleWashing\:\:\$vehicle type mapping mismatch\: database can contain App\\Entity\\Vehicle\|null but property expects App\\Entity\\Vehicle\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/VehicleWashing.php
+
+		-
+			message: '#^Call to an undefined method DateTimeInterface\:\:add\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Method App\\Entity\\Week\:\:getSeason\(\) should return App\\Entity\\Season\|null but returns App\\Entity\\Person\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Property App\\Entity\\Week\:\:\$createdAt type mapping mismatch\: property can contain DateTimeInterface\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Property App\\Entity\\Week\:\:\$dateStart \(DateTime\|null\) does not accept DateTimeInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Property App\\Entity\\Week\:\:\$dateStart type mapping mismatch\: property can contain DateTime\|null but database expects DateTimeInterface\.$#'
+			identifier: doctrine.columnType
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Property App\\Entity\\Week\:\:\$season \(App\\Entity\\Person\) does not accept App\\Entity\\Season\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Property App\\Entity\\Week\:\:\$season type mapping mismatch\: database can contain App\\Entity\\Season\|null but property expects App\\Entity\\Person\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Property App\\Entity\\Week\:\:\$season type mapping mismatch\: property can contain App\\Entity\\Person but database expects App\\Entity\\Season\|null\.$#'
+			identifier: doctrine.associationType
+			count: 1
+			path: src/Entity/Week.php
+
+		-
+			message: '#^Call to an undefined method Symfony\\Component\\Security\\Core\\User\\UserInterface\:\:getUserPersonLink\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/EventListener/UserListener.php
+
+		-
+			message: '#^Call to an undefined method Symfony\\Component\\Security\\Core\\User\\UserInterface\:\:setUserPersonLink\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/EventListener/UserListener.php
+
+		-
+			message: '#^Method App\\Form\\AppFormFactory\:\:create\(\) should return Symfony\\Component\\Form\\Form but returns Symfony\\Component\\Form\\FormInterface\<mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/AppFormFactory.php
+
+		-
+			message: '#^Method App\\Form\\AppFormFactory\:\:create\(\) should return Symfony\\Component\\Form\\Form but returns false\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/AppFormFactory.php
+
+		-
+			message: '#^Method App\\Repository\\ChildRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/ChildRepository.php
+
+		-
+			message: '#^Method App\\Repository\\ComponentRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/ComponentRepository.php
+
+		-
+			message: '#^Method App\\Repository\\FamilyRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/FamilyRepository.php
+
+		-
+			message: '#^Method App\\Repository\\InvoiceRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/InvoiceRepository.php
+
+		-
+			message: '#^Method App\\Repository\\LocationRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 2
+			path: src/Repository/LocationRepository.php
+
+		-
+			message: '#^Method App\\Repository\\PersonRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/PersonRepository.php
+
+		-
+			message: '#^Variable \$kind might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Repository/PickupRepository.php
+
+		-
+			message: '#^Method App\\Repository\\ProductCancelledDateRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/ProductCancelledDateRepository.php
+
+		-
+			message: '#^Method App\\Repository\\ProductRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/ProductRepository.php
+
+		-
+			message: '#^Variable \$timeRef might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Repository/RideRepository.php
+
+		-
+			message: '#^Method App\\Repository\\SchoolRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/SchoolRepository.php
+
+		-
+			message: '#^Method App\\Repository\\WeekRepository\:\:findAll\(\) should return list\<object\> but returns Doctrine\\ORM\\Query\<null, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repository/WeekRepository.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$boardsArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$booklet_id might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$child_id might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$currentId might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$currentMessage might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$staff_id might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/BookletChildService.php
+
+		-
+			message: '#^Variable \$results might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/BookletService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\CascadeService\:\:\$pickupActivityService\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/CascadeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\CascadeService\:\:\$productService\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/CascadeService.php
+
+		-
+			message: '#^Method App\\Service\\CascadeService\:\:delete\(\) invoked with 2 parameters, 1 required\.$#'
+			identifier: arguments.count
+			count: 2
+			path: src/Service/CascadeService.php
+
+		-
+			message: '#^Variable \$messages might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/CascadeService.php
+
+		-
+			message: '#^Method App\\Service\\ChildPresenceService\:\:delete\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/ChildPresenceService.php
+
+		-
+			message: '#^Method App\\Service\\ChildPresenceService\:\:findAllByDate\(\) should return array but returns null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Service/ChildPresenceService.php
+
+		-
+			message: '#^Variable \$childPresencesArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/ChildPresenceService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/ChildPresenceService.php
+
+		-
+			message: '#^Variable \$sportsArray in isset\(\) always exists and is not nullable\.$#'
+			identifier: isset.variable
+			count: 1
+			path: src/Service/ChildPresenceService.php
+
+		-
+			message: '#^Variable \$childBySchool might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/ChildService.php
+
+		-
+			message: '#^Variable \$schoolData might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/ChildService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\CredentialService\:\:\$staffService\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/CredentialService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\CredentialService\:\:\$userService\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/CredentialService.php
+
+		-
+			message: '#^Method App\\Service\\CredentialService\:\:findAll\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/CredentialService.php
+
+		-
+			message: '#^Variable \$credentialsArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/CredentialService.php
+
+		-
+			message: '#^Variable \$date in isset\(\) is never defined\.$#'
+			identifier: isset.variable
+			count: 1
+			path: src/Service/ExtractListService.php
+
+		-
+			message: '#^Variable \$activitys might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/GroupActivityService.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 3
+			path: src/Service/GroupActivityService.php
+
+		-
+			message: '#^Variable \$childPresenceTargets might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/GroupActivityService.php
+
+		-
+			message: '#^Variable \$oldLinks in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 2
+			path: src/Service/GroupActivityService.php
+
+		-
+			message: '#^Variable \$staffTarget might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/GroupActivityService.php
+
+		-
+			message: '#^Variable \$staffs might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/GroupActivityService.php
+
+		-
+			message: '#^Call to an undefined method App\\Entity\\HistoricPersonAction\:\:getContent\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Service/HistoricPersonActionService.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/HistoricPersonActionService.php
+
+		-
+			message: '#^Call to an undefined method App\\Entity\\HistoricSmsList\:\:getContent\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Service/HistoricSmsListService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\InvoiceService\:\:\$transactionService\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$childs might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$dateSession might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$dates might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$person might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$products might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$sessiondate might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/InvoiceService.php
+
+		-
+			message: '#^Variable \$object might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/MealService.php
+
+		-
+			message: '#^Variable \$type might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/MealService.php
+
+		-
+			message: '#^Variable \$media might not be defined\.$#'
+			identifier: variable.undefined
+			count: 3
+			path: src/Service/MediaService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/MediaService.php
+
+		-
+			message: '#^Method App\\Service\\NotificationService\:\:delete\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/NotificationService.php
+
+		-
+			message: '#^Variable \$personList might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/NotificationService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\PersonService\:\:\$phoneService\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/PersonService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/PersonService.php
+
+		-
+			message: '#^Method App\\Service\\PickupActivityService\:\:create\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^Method App\\Service\\PickupActivityService\:\:delete\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^PHPDoc tag @throws has invalid value \(\)\: Unexpected token "\\n     ", expected type at offset 101 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^Variable \$groupActivityEnd might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^Variable \$groupAge might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^Variable \$oldLinks in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^Variable \$sportsArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupActivityService.php
+
+		-
+			message: '#^Method App\\Service\\PickupService\:\:create\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Method App\\Service\\PickupService\:\:delete\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$all might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$hasLunch might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$key might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$newsPickups might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$productHours might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$productIsOffered might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$productName might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/PickupService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\RegistrationService\:\:\$ChildPresenceService\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\RegistrationService\:\:\$cascadeService\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\RegistrationService\:\:\$personService\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\RegistrationService\:\:\$pickupService\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Variable \$childList might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Variable \$messages might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/RegistrationService.php
+
+		-
+			message: '#^Method App\\Service\\ReminderService\:\:delete\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/ReminderService.php
+
+		-
+			message: '#^Undefined variable\: \$dataSend$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/ReminderService.php
+
+		-
+			message: '#^Undefined variable\: \$status$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/ReminderService.php
+
+		-
+			message: '#^Array has 2 duplicate keys with value ''kind'' \(''kind'', ''kind''\)\.$#'
+			identifier: array.duplicateKey
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Array has 2 duplicate keys with value ''start'' \(''start'', ''start''\)\.$#'
+			identifier: array.duplicateKey
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Cannot assign new offset to string\.$#'
+			identifier: offsetAssign.dimType
+			count: 2
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$childLists might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$hasLunch might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$o_moment might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$p_targets might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$productHours might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$productIsOffered might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$productName might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$reportArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$staffArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Variable \$t_moment might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/RideService.php
+
+		-
+			message: '#^Method App\\Service\\ShortUrlService\:\:findAllSearch\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/ShortUrlService.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/ShortUrlService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\StatistiqueService\:\:\$productService\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Method App\\Service\\StatistiqueService\:\:analyzeActivityPresences\(\) invoked with 3 parameters, 2 required\.$#'
+			identifier: arguments.count
+			count: 2
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Method App\\Service\\StatistiqueService\:\:analyzeChildPresences\(\) invoked with 3 parameters, 2 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$averageTtcByLocation might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$caMetaGroup might not be defined\.$#'
+			identifier: variable.undefined
+			count: 3
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$demo might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$latest might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$listAmountByLocationMomentOrdered might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$nbDayByTtcDayAmount might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$nbMetaGroup might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$percentHt might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$percentVat might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$previousEndDate might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$previousStartDate might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$product_without_category might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$product_without_family might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$refDay might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StatistiqueService.php
+
+		-
+			message: '#^Variable \$arr might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/StockProductService.php
+
+		-
+			message: '#^Variable \$results might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/SurveyService.php
+
+		-
+			message: '#^Method App\\Service\\SurveySessionService\:\:findAllSearch\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/SurveySessionService.php
+
+		-
+			message: '#^Variable \$nb might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/SurveySessionService.php
+
+		-
+			message: '#^Variable \$surveyNotationArray might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/SurveySessionService.php
+
+		-
+			message: '#^Variable \$surveySessionData might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/SurveySessionService.php
+
+		-
+			message: '#^Variable \$total might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/SurveySessionService.php
+
+		-
+			message: '#^Method App\\Service\\SurveyStaffNotationService\:\:create\(\) should return array but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Service/SurveyStaffNotationService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\TaskStaffService\:\:\$staffService\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Service/TaskStaffService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/VehicleItemService.php
+
+		-
+			message: '#^Access to an undefined property App\\Service\\VehicleService\:\:\$reminderService\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Service/VehicleService.php
+
+		-
+			message: '#^Undefined variable\: \$action$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Service/VehicleService.php
+
+		-
+			message: '#^Variable \$repo might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/VehicleService.php
+
+		-
+			message: '#^Variable \$result might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/VehicleService.php
+
+		-
+			message: '#^Variable \$washings might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Service/VehicleService.php

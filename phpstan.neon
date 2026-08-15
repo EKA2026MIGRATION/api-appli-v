@@ -1,0 +1,17 @@
+includes:
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-doctrine/rules.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: 3
+    paths:
+        - src
+        - tests
+    excludePaths:
+        - patched/*
+    symfony:
+        containerXmlPath: var/cache/dev/App_KernelDevDebugContainer.xml
+    doctrine:
+        objectManagerLoader: .phpstan/object-manager.php

@@ -1,0 +1,14 @@
+{% extends "@c975LUser/layout.html.twig" %}
+{% trans_default_domain 'user' %}
+{% set title = 'label.user_profile_show'|trans %}
+
+{% block user_content %}
+{# Toolbar #}
+    {{ toolbar_display('@c975LUser/tools.html.twig', 'display', 'md', user) }}
+{# Avatar #}
+    {{ user_avatar() }}
+{# Form #}
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}

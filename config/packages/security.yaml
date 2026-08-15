@@ -1,0 +1,36 @@
+security:
+    password_hashers:
+        App\Entity\User: bcrypt
+    providers:
+        c975_l_userbundle:
+            entity:
+                class: App\Entity\User
+    access_decision_manager:
+        strategy: unanimous
+        allow_if_all_abstain: false
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            pattern: ^/
+            provider: c975_l_userbundle
+            stateless: true
+            entry_point: c975L\UserBundle\Security\TokenAuthenticator
+            custom_authenticators:
+                - c975L\UserBundle\Security\TokenAuthenticator
+            form_login:
+                login_path: user_signin
+                check_path: user_signin
+                default_target_path: user_dashboard
+                enable_csrf: true
+            json_login:
+                check_path: user_api_authenticate
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 31536000
+                path: /
+                secure: true
+            logout:
+                path: user_signout
+    access_control:

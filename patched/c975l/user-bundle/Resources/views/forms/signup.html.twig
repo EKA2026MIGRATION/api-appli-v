@@ -1,0 +1,37 @@
+{% extends "@c975LUser/layout.html.twig" %}
+{% trans_default_domain 'user' %}
+{% set title = 'label.signup_create_account'|trans %}
+
+{% block user_content %}
+{# Information #}
+    <p class="alert alert-info text-center">
+        {{ 'text.signup_info'|trans }}
+    </p>
+{# Password requirement #}
+    <p class="alert alert-warning text-center">
+        {{ 'password.requirement'|trans({}, 'validators') }}
+    </p>
+{# Form #}
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+{# Terms of use acceptance #}
+        <div class="checkbox">
+            <label for="termsAccepted" class="required">
+                <input type="checkbox" id="termsAccepted" name="termsAccepted" required="required" />
+                {{ 'label.accept_tou'|trans({'%touUrl%': touUrl})|raw }}
+            </label>
+        </div>
+{# Submit #}
+        <div class="form-group">
+            <button type="submit" name="submit" title="{{ 'label.validate'|trans({}, 'toolbar') }}" class="btn btn-lg btn-primary btn-block">
+                {{ 'label.validate'|trans({}, 'toolbar') }}
+            </button>
+        </div>
+        {{ form_end(form) }}
+{# Mandatory field #}
+    <p class="text-muted">
+        <em>
+            {{ 'label.mandatory_field'|trans({}, 'services') }}
+        </em>
+    </p>
+{% endblock %}

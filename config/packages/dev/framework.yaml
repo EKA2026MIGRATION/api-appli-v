@@ -1,0 +1,7 @@
+# Local (dev uniquement) : ne pas convertir les notices/warnings/dépréciations PHP en exceptions.
+# Le code legacy en émet beaucoup sur PHP 7.4 ; en prod (debug off) elles sont ignorées.
+# On aligne le dev sur ce comportement (les erreurs restent loguées) pour avoir un local utilisable,
+# miroir de la prod. Les vraies erreurs fatales restent fatales.
+framework:
+    php_errors:
+        throw: false

@@ -1,0 +1,42 @@
+# OS / éditeur
+.DS_Store
+
+# Makefile d'environnement local (dev)
+Makefile
+
+# Outils Composer locaux (install PHP 7.4) — ne pas versionner les binaires
+composer.phar
+composer1.phar
+
+# Ancienne copie cassée des dépendances (cleanup avant refactor)
+vendor.broken/
+
+apidoc
+Documentation
+config_bundles.yaml
+config_bundles.yaml.bak
+config/jwt
+backup_config.cnf
+config/bundles.php
+symfony.lock
+composer.lock
+
+###> symfony/framework-bundle ###
+/.env
+/.env.local
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+.web-server-pid

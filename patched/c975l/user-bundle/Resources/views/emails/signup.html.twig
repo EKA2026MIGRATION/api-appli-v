@@ -1,0 +1,24 @@
+{% extends '@c975LEmail/emails/layout.html.twig' %}
+{% trans_default_domain 'user' %}
+
+{% block email_content %}
+    {% block user_content %}
+        <div>
+{# Explanation #}
+            <p>
+                {{ 'text.signup_email'|trans }}
+            </p>
+{# Url #}
+            <p class="text-center">
+                <a href="{{ url }}" class="btn btn-primary btn-lg">
+                    {{ 'label.signup_email'|trans }}</a>
+            </p>
+{# Use only once #}
+            <p class="text-center">
+                <strong>
+                    {{ 'text.use_only_once_link'|trans }}
+                </strong>
+            </p>
+        </div>
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,3 @@
+*.bak
+.php_cs.cache
+vendor

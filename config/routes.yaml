@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+c975_l_user:
+    resource: "@c975LUserBundle/Controller/"
+    type:     annotation
+    prefix:   /

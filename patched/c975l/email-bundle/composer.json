@@ -1,0 +1,55 @@
+{
+    "name": "c975l/email-bundle",
+    "version": "2.999.0",
+    "type": "symfony-bundle",
+    "description": "Bundle to manage sending emails and store in a database ",
+    "keywords": ["symfony", "bundle"],
+    "homepage": "https://github.com/975L/EmailBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurent Marquet",
+            "email": "laurent.marquet@laposte.net",
+            "homepage": "https://github.com/LaurentMarquet",
+            "role": "Developer"
+        },
+        {
+            "name": "975L Community",
+            "homepage": "https://github.com/975L"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "c975l/config-bundle": "*",
+        "c975l/includelibrary-bundle": "*",
+        "c975l/services-bundle": "*",
+        "c975l/toolbar-bundle": "*",
+        "doctrine/doctrine-bundle": "^1 || ^2",
+        "doctrine/orm": "^2",
+        "knplabs/knp-paginator-bundle": "*",
+        "symfony/form": "*",
+        "symfony/security-bundle": "*",
+        "symfony/mailer": "^6.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0",
+        "phpunit/phpunit": "^7",
+        "rector/rector": "^0",
+        "symplify/easy-coding-standard": "^5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "c975L\\EmailBundle\\": ""
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "support": {
+        "email": "contact@975l.com",
+        "source": "https://github.com/975L/EmailBundle",
+        "issues": "https://github.com/975L/EmailBundle/issues"
+    }
+}

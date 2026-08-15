@@ -1,0 +1,823 @@
+ChangeLog
+
+v0.30.8
+- Ajout d'une date lors de la création de Transaction (14/03/2019)
+
+v0.30.7.1
+- Correction ChangeLog (13/03/2019)
+
+v0.30.7
+- Ajout de la route `transaction_display_internal_order` (13/03/2019)
+
+v0.30.6
+- Suppression des retours lignes inutiles (11/03/2019)
+- Ajout de la route `/registration/list/without-cart` (12/03/2019)
+- Suppression de la mise à jour de la date pour Registration (12/03/2019)
+- Correction de la suppression de lien UserPersonLink (12/03/2019)
+- Ajout de la suppression de PersonPersonLink lors de la suppression de Person (12/03/2019)
+
+v0.30.5
+- Ajout de `set_time_limit(600);` pour `pickup_activity_affect` (11/03/2019)
+
+v0.30.4
+- Suppression des données liées au groupActivityMidStart (10/03/2019)
+
+v0.30.3
+- Correction de l'affect des PA pour vérifier avant de passer dans le PA de l'après-midi (10/03/2019)
+
+v0.30.2
+- Suppression de la restriction d'accès pour Category->display(), Product->display() et Blog->list()/display() (08/03/2019)
+- Ajout de `/transaction/list/{status}/{personId}` (08/03/2019)
+- Ajout de product-cancelled-date/list/{categoryId}/{date} et product-cancelled-date/list/{productId}/{date} (08/03/2019)
+
+v0.30.1
+- Ajout du filtrage des transactions pour n'afficher que celles liées à la Person (08/03/2019)
+- Suppression de l'ajout de la date par défaut dans les Transactions (08/03/2019)
+- Ajout du champ category sur ProductCancelledDate (08/03/2019)
+- Correction du inversed related sur Person (08/03/2019)
+- Correction du inversed invoiceProducts sur Invoice (08/03/2019)
+
+v0.30
+- Ajout de l'entité ProductCancelledDate (07/03/2019)
+
+v0.29.9
+- Mise à jour de UserBundle pour intégrer la modification de reset-password-confirm (06/03/2019)
+- Affiche des Components de Product dans Registration (07/03/2019)
+
+v0.29.8
+- Correction de l'affichage de school pour Child (07/03/2019)
+
+v0.29.7
+- Suppression des envois inutiles de "null" pour les `denyAccessUnlessGranted` (07/03/2019)
+- Utilisation de @entity pour `person_display_identifier` (07/03/2019)
+
+v0.29.6
+- Ajout de `/transaction/modify/{internalOrder}` (07/03/2019)
+- Mise à jour de UserBundle pour prendre en compte le reset-password par email (07/03/2019)
+
+v0.29.5
+- Ajout de la prise en compte de isActive pour les parameters (07/03/2019)
+- Création d'une méthode pour les récupérer parameters pour l'affect des PA (07/03/2019)
+
+v0.29.4
+- Mise à jour de UserBundle pour intégrer change-password et reset-password (06/03/2019)
+
+v0.29.3
+- Mise à jour de UserBundle pour intégrer change-password et reset-password (06/03/2019)
+
+v0.29.2
+- Correction de PersonService -> getRelated() (06/03/2019)
+
+v0.29.1
+- Ajout d'un champ `transaction` sur Registration pour pouvoir lier les Registration à Transaction (06/03/2019)
+- Ajout d'un champ date sur Transaction pour pouvoir les filtrer (06/03/2019)
+- Modification de la liste des Transaction en filtrant par date (06/03/2019)
+- Ajout de la liste par status et person pour Transaction (06/03/2019)
+- Mise en place de strtolower pour certains champs string des entity afin d'éviter les problèmes de search en bdd (06/03/2019)
+
+v0.29
+- Ajout de la possibilité de créer un Person si non authentifié (05/03/2019)
+- Ajout de la bijectivité des relations PersonPersonLink (05/03/2019)
+- Ajout de l'entité Transaction (05/03/2019)
+
+v0.28.1
+- Mise à jour des bundles (05/03/2019)
+- Correctif ChildController (05/03/2019)
+
+v0.28
+- Ajout de l'entité School (05/03/2019)
+- Ajout du champ `school_id` sur `Child (05/03/2019)
+- Ajout du champ `franceResident` sur Child (05/03/2019)
+
+v0.27.7
+- Modification de l'auto-affect qui ne marchait pas en prod (01/03/2019)
+- Ajout de `location` sur PickupActivity (01/03/2019)
+
+0.27.6.2
+- Correction du regroupement de l'auto-affect des PickupActivity qui créait trop de groupes (01/03/2019)
+
+v0.27.6.1
+- Séparation en plusieurs méthodes de `PickupActivity > affect()` (01/03/2019)
+- Correction de l'unaffect des PickupActivity pour supprimer les GroupActivity qui ne l'étaient pas (01/03/2019)
+- Correction de l'affect des PickupActivity pour grouper les enfants (01/03/2019)
+
+v0.27.6
+- Ajout de la possibilité d'affecter un PickupActivity à 2 GroupActivity si les horaires couvrent la journée (01/03/2019)
+
+v0.27.5.2
+- Ajout de https://energykidsacademy.net/ aux CORS (01/03/2019)
+- Ajout d'une location par défaut pour les GroupActivity créés via l'auto-affect des PickupActivity (01/03/2019)
+
+v0.27.5.1
+- Ajout d'une protection pour ne pas pouvoir lier un Person à lui même (28/02/2019)
+
+v0.27.5
+- Ré-ajout de la possibilité d'ajouter des relations dans PersonService->create() en faisant un persist du Person avant (05/02/2019)
+
+v0.27.4
+- Ajout de l'entity Parameter pour pouvoir changer certains paramètres (27/02/2019)
+- Modification de l'unaffect des PickupActivity qui  n'est plus autorisé si le GroupActivity est `locked` (27/02/2019)
+- Modification de l'affect des PickupActivity, ils ne sont plus pris en compte si validated == validated (27/02/2019)
+- Création des GroupActivity en fonction des besoins liés au PickupActivity et non en utilisant ceux qui sont déjà créés (21/02/2019)
+- Ajout du champ `age` sur GroupActivity (27/02/2019)
+
+v0.27.3
+- Ajout du ReadMe (25/02/2019)
+- Ajout de `locked` sur GroupActivity (26/02/2019)
+- Ajout de gender sur child (26/02/2019)
+
+v0.27.2
+- Possibilité de Name null pour GroupActivity (21/02/2019)
+- Ajout de la Route `pickup_activity_list_child` (21/02/2019)
+
+v0.27.1
+- Modification du ChangeLog (21/02/2019)
+
+v0.27
+- Mise en place de la méthode isEmpty() pour les delete (20/02/2019)
+- Ajout des Route `pickup_activity_affect` et `pickup_activity_affect`
+
+v0.26.2
+- Ajout d'un search sur les dates des Invoice (20/02/2019)
+- Autorisation des number === null sur Invoice (20/02/2019)
+- Suppression deu contenu de InvoiceProductRepository car non utilisé (20/02/2019)
+
+v0.26.1
+- Mise à jour du script de backup (15/02/2019)
+- Ajout de Mail sur Product (19/02/2019)
+
+v0.26
+- Ajout de l'entité Blog (14/02/2019)
+- Ajout de l'entité Mail (14/02/2019)
+
+v0.25.12
+- Suppression scale pour IntegerType (13/02/2019)
+- Mise à jour des bundles (14/02/2019)
+
+v0.25.11.1
+- Correction field `sports` pour RegistrationType (11/02/2019)
+- Correction de l'ajout du champ `peferences` sur Registration (11/02/2019)
+
+v0.25.11
+- Modification de `sport` sur Registration en array avec table de liens (11/02/2019)
+
+v0.25.10
+- Mise à jour bundles (08/02/2019)
+
+v0.25.9.1
+- Correction staffPresenceRepository (07/02/2019)
+
+v0.25.9
+- Modification script backup (07/02/2019)
+- Ajout de `preferences` dans Registration (07/02/2019)
+
+v0.25.8
+- Ajout de champs dans InvoiceProduct et Invoice (07/02/2019)
+
+v0.25.7
+- Suppression de quantity dans Product et ajout dans InvoiceProduct (07/02/2019)
+
+v0.25.6
+- Ajout de `quantity` à Product (07/02/2019)
+
+v0.25.5
+- Ajout de `vat` à InvoiceComponent (07/02/2019)
+- Correction de InvoiceComponentType (07/02/2019)
+- Modification du persist des Invoice afin que tout (+InvoiceProduct et InvoiceComponent) soit enregistré dans la même transaction (07/02/2019)
+
+v0.25.4
+- Suppression de la possibilité d'ajouter des relations dans PersonService->create() car uniquement dans modify (05/02/2019)
+- Ajout de routes pour registration (05/02/2019)
+- Mise à jour du Fichier de backup (05/02/2019)
+
+v0.25.3
+- Ajout de la possibilité d'ajouter des relations dans PersonService->create() (05/02/2019)
+
+v0.25.2.1
+- Mise à jour de UserBundle (05/02/2019)
+- Modification du message sur la homepage (05/02/2019)
+
+v0.25.2
+- Ajout du nouveau site à la sauvegarde (05/02/2019)
+
+v0.25.1
+- Corrections InvoiceProduct (05/02/2019)
+
+v0.25
+- Ajout des Invoice (04/02/2019)
+
+v0.24.12
+- Amélioration des tests pour vérifier que les list renvoient bien quelque chose (04/02/2019)
+- Mise à jour bundles (SF 4.2.3) (04/02/2019)
+
+v0.24.11.1
+- Correction list PickupActivity (03/02/2019)
+
+v0.24.11
+- Ajout de date, start et end à PickupActivity (03/02/2019)
+
+v0.24.10
+- Modification du traitement de links pour PickupActivity et GroupActivity et de staff pour GroupActivity, ils sont effacés avant d'être re-créés (01/02/2019)
+
+v0.24.9
+- Ajout du champ phone sur Pickup (01/02/2019)
+- Mise à jour des bundles (01/02/2019)
+
+v0.24.8
+- Ajout du script pour la backup via rClone (31/01/2019)
+
+v0.24.7
+- Ajout de l'affichage du niveau PickupActivity pour les GroupActivity (31/01/2019)
+- Ajout de la route `/group-activity/display/{date}/{staffId}` pour GroupActivity (31/01/2019)
+
+v0.24.6
+- Prise en compte des links pour les modify de PickupActivity et GroupActivity (30/01/2019)
+
+v0.24.5
+- Ajout de l'entité Television (30/01/2019)
+- Ajout des données de Person pour le Staff dans GroupActivity (30/01/2019)
+
+v0.24.4
+- Ajout de area dans GroupActivity (30/01/2019)
+
+v0.24.3
+- Ajout des liens entre GroupActivity et Staff (30/01/2019)
+- Corrections phpstan (30/01/2019)
+- Corrections liens sur entités (30/01/2019)
+
+v0.24.2
+- Ajout des liens entre PickupActivity et GroupActivity (30/01/2019)
+
+v0.24.1.1
+- Correction RideType (29/01/2019)
+
+v0.24.1
+- Mise en place des GroupActivity (29/01/2019)
+
+v0.24
+- Mise en place de PickupActivity (29/01/2019)
+
+v0.23.8
+- Ajout d'une Route `/staff/presence/total/{seasonId}` qui renvoie le total des presences par season et par staff (29/01/2019)
+
+v0.23.7
+- Ajout d'une route `/product/list/child/{chilId}` pour lister les Product spécifiques à un Child (28/01/2019)
+- Ajout de la possibilité de crééer des Pickups par array (28/01/2019)
+
+v0.23.6
+- Ajout de places dans Vehicle (28/01/2019)
+- Ajout de maxChildren sur Staff (28/01/2019)
+- Conversion de session_date + session_start et session_end -> sessions pour Registration (28/01/2019)
+- Ajout d'une erreur si le tableau envoyé n'est pas bien formatté (28/01/2019)
+- Correction de l'affichade de `hours` pour Product (28/01/2019)
+
+v0.23.5
+- Ajout de la possibilité d'afficher pour une année les ChildPresence et StaffPresence (28/01/2019)
+
+v0.23.4
+- Ajout du maintien des Pickups pour un Ride lock lors de unaffect (26/01/2019)
+- Ajout d'une propriété `lunch` sur Product (26/01/2019)
+- Ajout des routes pour suppression avec le registrationId pour Pickup et ChildPresence (26/01/2019)
+
+v0.23.3
+- Modification de l'ajout des liens ChildPerson par suppression de tous les liens et soumission des nouveaux (22/01/2019)
+- Modification de l'ajout des liens des Product par suppression de tous les liens et soumission des nouveaux (22/01/2019)
+- Correction de l'ajout d'un sibling Child (22/01/2019)
+- Modification Registration (22/01/2019)
+
+v0.23.2.1
+- Correction nom du champ "is_sport_selectable" (21/01/2019)
+
+v0.23.2
+- Ajout de ChildPresence (21/01/2019)
+- Correction du deletepar array of id de StaffPresence (21/01/2019)
+- Ajout de tests pour StaffPresence (21/01/2019)
+
+v0.23.1
+- Modification Product->isSportAssociated par isSportSelectable (21/01/2019)
+
+v0.23
+- Migration Symfony 4.2 (21/01/2019)
+- Ajout de champs pour Registration (21/01/2019)
+- Ajout du champ registration sur Pickup (21/01/2019)
+
+v0.22
+- Mise en place des inscriptions (18/01/2019)
+
+v0.21.5
+- Mise à jour du backup (17/01/2019)
+
+v0.21.4
+- Mise à jour du backup (17/01/2019)
+
+v0.21.3
+- Suppression de la vérification CSRF sur les forms (17/01/2019)
+- Mise en place d'un message d'erreur si le champ soumis n'existe pas (17/01/2019)
+
+v0.21.2
+- Ajout de "all" pour /staff/presence/list/{kind}/{date} (17/01/2019)
+
+v0.21.1
+- Ajout de la possibilité d'utiliser staff/list sans kind (17/01/2019)
+- Ajout de /staff/search/{term} (17/01/2019)
+- Ajout de 0-9 pour les search (17/01/2019)
+- Coorection de cascade persist pour DriverZone (17/01/2019)
+
+v0.21
+- Transformation des driver en staff (16/01/2019)
+- Ajout de tests supplémentaires (16/01/2019)
+- Correction de l'auto affect des Pickups (16/01/2019)
+
+v0.20
+- Modification des Component pour que les prix soient enregistrées dans la table de liens (16/01/2019)
+- Remplacement des isset sur array par array_key_exists (16/01/2019)
+- Déplacement des appels `$this->mainService->create($object);` directement après la création de l'objet (16/01/2019)
+
+v0.19.2
+- Mise à jour des bundles (15/01/2019)
+
+v0.19.1
+- Ajout de tests sur les links (15/01/2019)
+- Suppression des links pour les méthodes delete et suppression des liens automatique (15/01/2019)
+- Déplacement du persist des objects sur modify et create après l'ajout des liens (15/01/2019)
+- Ajout de la liste des Product aux Component (15/01/2019)
+- Ajout des Routes + tests pour Category (15/01/2019)
+- Ajout des Routes + tests pour Sport (15/01/2019)
+- Ajout de la possibilité de supprimer les liens (catégorie, locatins, sports) sur les Product (15/01/2019)
+
+v0.19
+- Modification des Products et ajout des Entités liées (14/01/2019)
+- Déplacement du persist des objects sur delete après la supression des liens (15/01/2019)
+
+v0.18.2
+- Ajout de la possibilité d'exporter les données du User (12/01/2019)
+
+v0.18.1
+- Suppression des Routes /ride/lock|unlock qui sont remplacées par ride/modify (12/01/2019)
+- Ajout du LinkedRide dans le json du Ride (12/01/2019)
+
+v0.18
+- Suppression des méthodes de sélection des Pickup quand force === true pour faire un unaffect d'abord et ensuite select des unaffected (11/01/2019)
+- Mise en place de la possibilité d'affecter tous les pickups en utilisant 'all' (11/01/2019)
+- Mise en place de la possibilité d'affecter des Pickups sur un Ride lié (11/01/2019)
+
+v0.17.8.2
+- Corrections DriverPresenceService.php et ProductService (10/01/2019)
+
+v0.17.8.1
+- Correction `linkedRideId` (10/01/2019)
+
+v0.17.8
+- Ajout d'un champ `linkedRideId` dans les Ride (10/01/2019)
+
+v0.17.7
+- Modification de la suppression d'un utilisateur pour le marquer comme supprimé ainsi que tous les "objets" liés (07/01/2019)
+
+v0.17.6.3
+- Suppression de l'obligation de combustible pour Vehicle (10/01/2019)
+
+v0.17.6.2
+- Ajout de l'heure du Pickup dans le md5 pour grouper les Pickups (09/01/2019)
+
+v0.17.6.1
+- Ajout du filtrage pour les résultats de ->findOneById() (09/01/2019)
+
+v0.17.6
+- Correction des request leftJoin qui n'affichaient rien si un élément du leftJoin manquait (09/01/2019)
+- Ajout du filtrage si suppressed = true avant l'affichage des tableaux (09/01/2019)
+
+v0.17.5
+- Ajout des possibilités pour lier les Child et Person entre eux, ce qui n'était pas effectif (09/01/2019)
+- Modification de l'ordre des Pickups non affectés (09/01/2019)
+- Correction de la création de Person pour autoriser la création sans lien avec le User (09/01/2019)
+
+v0.17.4
+- Ajout d'un PersonPersonLink pour lier les Person (07/01/2019)
+
+v0.17.3.1
+- Correction auto-dispatch (09/01/2019)
+
+v0.17.3
+- Ajout des Routes pour lock/unlock Ride (09/01/2019)
+
+v0.17.2
+- Ajout de `symfony/dotenv` dans le require pour pouvoir mettre l'environnement (08/01/2019)
+
+v0.17.1
+- Ajout de loclahost dans `nelmio_cors.yaml` pour centraliser les accès (08/01/2019)
+
+v0.17
+- Ajout d'une contrainte UNIQUE sur personId de Driver (08/01/2019)
+- Corrections indiquées par phpstan (08/01/2019)
+- Suppression des GetResult pour les méthodes devant être paginées (08/01/2019)
+- Ajout du champ `places` dans Ride et prise en compte dans l'auto dispatch (08/01/2019)
+- Prise en compte du nombre de places par Pickup pour l'auto-dispatch (08/01/2019)
+
+v0.16.24
+- Ajout des Champs Created, etc. pour User (07/01/2019)
+- Ajout de l'email + identifier sur Person qui sont liées à un User (07/01/2019)
+- Ajout d'un test sur l'heure de fin du Ride pour l'auto dispacth (07/01/2019)
+
+v0.16.23.1
+- Correction du UserBundle (07/01/2019)
+
+v0.16.23
+- Ajout du geocoding pour Address (04/01/2019)
+- Modification du geocoding pour Pickup  (04/01/2019)
+- Ajout d'une route pour géocoder toutes les Address (04/01/2019)
+- Ajout d'une Route pour géocoder tous les Pickup (07/01/2019)
+- Correction PickupVoter (07/01/2019)
+
+v0.16.22.1
+- Correction DecimalType (07/01/2019)
+
+v0.16.22
+- Correction de l'affectation des Pickups (03/01/2019)
+- Ajout du geocoding des adresses des Pickups (04/01/2019)
+
+v0.16.21.2
+- Modification des champs entrés lors de la création des semaines (02/01/2019)
+
+v0.16.21.1
+- Ajout du code manquant pour l'attribut code (31/12/2018)
+
+v0.16.21
+- Ajout d'un attribut code sur `Week` (31/12/2018)
+
+v0.16.20.6
+- Correction de l'ordre de priorités des DRivers qui n'était pas pris en compte (28/12/2018)
+
+v0.16.20.5
+- Mise à jour des bundles (28/12/2018)
+
+v0.16.20.4
+- Ajout des Getter/Setter pour Person->identifier (27/12/2018)
+
+v0.16.20.3
+- Correction du lien Person/User pour passer par l'identifier du user puisque l'id n'est pas donné (27/12/2018)
+
+v0.16.20.2
+- Ajout espace pour calcul RideDateStart (27/12/2018)
+
+v0.16.20.1
+- Correction affect Pickup pour prendre en compte le jour du Ride ET son heure (27/12/2018)
+
+v0.16.20
+- Correction des méthodes `findOneByDateStart` pour `Week` et `Season` (27/12/2018)
+- Mise à jour des bundles (27/12/2018)
+
+v0.16.19
+- Déplacement de la création des entités dans le service correspondant (26/12/2018)
+- Modification de la Route person_create pour pouvoir prendre un user défini (26/12/2018)
+
+v0.16.18
+- Ajout du Driver pour person/display (26/12/2018)
+
+v0.16.17
+- Correction de l'auto affect des Pickups pour prendre en compte DropIn et DropOff (26/12/2018)
+- Ajout du champ `kind` pour les Ride (26/12/2018)
+
+v0.16.16
+- Création des `Week` lors de la création de `Season` (26/12/2018)
+
+v0.16.15
+- Ajout de rector (23/12/2018)
+
+v0.16.14
+- Suppression de l'auto-création des Rides lors de l'auto-affectation des Pickups puisqu'ils sont créés manuellement (18/12/2018)
+- Changement de la méthode d'affectation des pickups pour qu'elle se fasse en plusieurs passes par nombre d'inscrits (postal) et zones des chauffeurs (18/12/2018)
+
+v0.16.13.1
+- Correction de `driver_presence_list_date` (20/12/2018)
+- Correction de `ride_display_date_driver` (20/12/2018)
+
+v0.16.13
+- Ajout des tests pour DriverPrsence, Family et Week (20/12/2018)
+- Corrections dues aux tests (20/12/2018)
+
+v0.16.12.1
+- Correction de l'affichage des DriverPresence si non marquées comme supprimées (20/12/2018)
+
+v0.16.12
+- Ajout d'un champ addressId pour Driver (20/12/2018)
+
+v0.16.11
+- Ajout de la route `ride_create_multiple` pour prendre un array de données et créer plusieurs rides (20/12/2018)
+
+v0.16.10
+- Ajout de l'entité `Family` (20/12/2018)
+- Suppression de méthodes dans les interfaces pour qu'elles soient toutes cohérentes (les interfaces) (20/12/2018)
+- Suppression du use TokenStorageInterface non utilisé (20/12/2018)
+
+v0.16.9
+- Ajout de l'entité Week et lien avec seasons (20/12/2018)
+- Corrections DateTime et DateType (20/12/2018)
+- Ajout de `totalZones` pour Driver (20/12/2018)
+
+v0.16.8
+- Changement du lien de Ride -> Person pour Ride -> Driver (19/12/2018)
+
+v0.16.7
+- Ajout d'un champ `photo` pour Location (19/12/2018)
+- Ajout d'une méthode pour supprimer les DriverPresence par id (19/12/2018)
+
+v0.16.6
+- Ajout d'un paramètre `date` pour les DriverPresence (18/12/2018)
+- Correction lors de l'ajout d'une DriverPresence (18/12/2018)
+
+v0.16.5.2
+- Correction sur l'affectation des Pickups (14/12/2018)
+
+v0.16.5.1
+- Correction findAll pour Component (14/12/2018)
+
+v0.16.5
+- Ajout d'une Route pour modifier les priority des drivers (13/12/2018)
+
+v0.16.4
+- Mise en place de la gestion des DriverPresence (13/12/2018)
+
+v0.16.3.2
+- Correction refresh après driver/modify (13/12/2018)
+
+v0.16.3.1
+- Correction oubli photo pour ProductType et ComponentType (13/12/2018)
+
+v0.16.3
+- Ajout dune Route search pour Component (13/12/2018)
+- Ajout dune Route search pour Product (13/12/2018)
+- Ajout de photo pour Component et Product (13/12/2018)
+
+v0.16.2
+- Ajout de la possibilité d'ajouter/modifier/supprimer des DriverZones (13/12/2018)
+
+v0.16.1
+- Correction d'un use class manquant (13/12/2018)
+
+v0.16
+- Ajout des entités DriverZone et DriverPresence (12/12/2018)
+- Ajout d'une Route faire l'affectation de tous les Pickups pour une date donnée (12/12/2018)
+- Ajout d'une Route pour la désaffectation de tous les Pickups pour une date donnée (13/12/2018)
+
+v0.15
+- Suppression des sessions (12/12/2018)
+
+v0.14.12.2
+- Correction du CORS (11/12/2018)
+
+v0.14.12.1
+- Ajout du scheme https pour la doc (11/12/2018)
+
+v0.14.12
+- Ajout de la possibilité de modifier `start` dans pickup/dispatch (11/12/2018)
+
+v0.14.11.1
+- Correction de la Route `pickup_dispatch` pour mettre eun ride à null (10/12/2018)
+
+v0.14.11
+- Modification de la Route pickup_sort_order pour `pickup_dispatch` (10/12/2018)
+- Suppression Route `ride_display_date` (10/12/2018)
+
+v0.14.10
+- Ajout d'une Route pour aficher le ride en fonction de la date et du personId pour supprimer `ride_display_date` ensuite (06/12/2018)
+- Mise à jour des bundles (07/12/2018)
+
+v0.14.9
+Ajout d'une Route pour modifier les sortOrder des pickups (06/12/2018)
+
+v0.14.8
+- Ajout de la modification des liens pour Meal (04/12/2018)
+
+v0.14.7
+- Champ `validated` boolean -> varchar sur Pickup (03/12/2018)
+
+v0.14.6
+- Sort order par date + start pour les rides (03/12/2018)
+
+v0.14.5
+- Ajout de la possibilité de FreeName pour Meal (03/12/2018)
+- Ajout du SortOrder des Pickups pour Ride (03/12/2018)
+
+v0.14.4
+- Ajout de la possibilité d'insérer un lien entre Food et Meal (30/11/2018)
+- Correction lors de la suppresion des Product pour supprimer automatiquement les liens (30/11/2018)
+- Correction lors de l'ajout d'une Person (30/11/2018)
+- Mise en place des tests (30/11/2018)
+- Correction dues aux tests (30/11/2018)
+
+v0.14.3
+- Remplacement de `isActive` pas `status` sur Food et Season (30/11/2018)
+- Ajout du renvoi des Address + Phone pour les Persons lors de l'affichage des Child (30/11/2018)
+
+v0.14.2
+- Modification du renvoi de `ride_display_date` (28/11/2018)
+
+v0.14.1
+- Ajout du champ photo sur food (28/11/2018)
+
+v0.14
+- Ajout de l'entité `Driver` (27/11/2018)
+- Suppression de la Route `person_list_drivers` (27/11/2018)
+
+v0.13.3
+- Modification de `ride_display_date` pour renvoyer tous les rides et pas seulement un (27/11/2018)
+
+v0.13.2
+- Renvoi d'un array vide pour `ride_display_date` s'il n'y a pas de ride pour l'utilisateur connecté et la date (27/11/2018)
+- Mise en place de la conversion des array soumis pour les champs des products (27/11/2018)
+
+v0.13.1
+- Ajout des champs manquants dans ProductType (26/11/2018)
+
+v0.13
+- Ajout de plusieurs champs sur Product (26/11/2018)
+- Ajout des champs "_en" sur Component (26/11/2018)
+- Ajout de `Season` (26/11/2018)
+- Ajout de `Location` (26/11/2018)
+
+v0.12.1
+- Ajout d'une route pour afficher Person depuis son User identifier (26/11/2018)
+
+v0.12
+- Ajout de Meal + Food files (25/11/2018)
+
+v0.11.2
+- Ajout des champs photo en url sur child vehicle et person (25/11/2018)
+
+v0.11.1
+- Correction `ride_display_date` (23/11/2018)
+- Ajout d'un champ `kind` sur Pickup (23/11/2018)
+- Ajout de la Route `person_list_drivers` (23/11/2018)
+
+v0.11
+- Suppression des droits d'accès "search" et remplacement par ceux de "list" (21/11/2018)
+- Ajout des Product + Component (22/11/2018)
+
+v0.10.4
+- Ajout de la table phone (21/11/2018)
+- Supression du champ phone sur table address (21/11/2018)
+- Ajout du champ validated sur Pickup (21/11/2018)
+
+v0.10.3
+- Ajout des photos de véhicule (20/11/2018)
+- Correction des ref=@Model (20/11/2018)
+- Suppression des "empty_data" (20/11/2018)
+- Si un champ est soumis avec la valeur null, alors il est nullifié (20/11/2018)
+
+v0.10.2
+- Correction sortOrder des Pickups (19/11/2018)
+
+v0.10.1
+- Correction pour mettre Ride = null (19/11/2018)
+- Ajout orderBy pour Rides (19/11/2018)
+
+v0.10
+- Ajout de required=false pour les FormType et des valeurs pour empty_data sinon les champs sont effacés (16/11/2018)
+
+v0.9.5.1
+- Correction RideService (16/11/2018)
+
+v0.9.5
+- Suppression des required pour les RideType (16/11/2018)
+
+v0.9.4
+- Suppression du required de "start" pour les Pickups (16/11/2018)
+- Mise en place de la suppression des données du Ride pour les Pickups lors de la suppression d'un Ride (16/11/2018)
+- Ajout des secondes pour "start" et "arrival" des Rides (16/11/2018)
+
+v0.9.3
+- Ajout d'un champ "medical" pour Child (14/11/2018)
+- Ajout d'un champ "photo" not mapped pour Person (14/11/2018)
+- Ajout"places" sur Pickup (14/11/2018)
+- Correction nom de la route ride_display_date (14/11/2018)
+- Ajout d'un champp "sexe" not mapped pour Child (15/11/2018)
+
+v0.9.2
+- Ajout de l'attribut ride pour PickupType (13/11/2018)
+
+v0.9.1
+- Ajout de l'entity manquante Pickup (13/11/2018)
+
+v0.9
+- Ajout des Pickups (13/11/2018)
+- Ajout de MainService et factorisation des méthodes (13/11/2018)
+
+v0.8
+- Ajout des Ride (12/11/2018)
+- Ajout des Vehicle (12/11/2018)
+
+v0.7.9
+- Création du Trait UpdateTrait et suppression de ses données dans CreationTrait (08/11/2018)
+- Ajout de la relation et des prénom et nom de l'enfant pour person/display et child/display (09/11/2018)
+
+v0.7.8
+- Ajout de la possibilité de sélectionner les person avec child/address null (07/11/2018)
+- Ajout de orderBy sur list/search (07/11/2018)
+
+v0.7.7
+- Séparation des méthodes pour ajouter/supprimer un lien Person/Address (06/11/2018)
+- Mise en place de la requête pour ne pas afficher les child et address marqués comme supprimés meême si le lien n'est pas supprimé (06/11/2018)
+
+v0.7.6.1
+- Séparation des méthodes pour ajouter/supprimer un lien Person/Child (06/11/2018)
+
+v0.7.6
+- Ajout/suppression des liens PersonChild sur modify (06/11/2018)
+- Mise à jour de la documentation (06/11/2018)
+
+v0.7.5
+- Suppression de la redirection pour create/modify Child, Address, Person (05/11/2018)
+
+v0.7.4.1
+- Suppression du champ phot dans ChildRepository (03/11/2018)
+
+v0.7.4
+- Suppression du champ photo dans la db vu qu'il correspond à l'id de l'enfant (02/11/2018)
+- Mise en place du contenu du champ photo si le fichier existe (02/11/2018)
+
+v0.7.3
+- Ajout du champ photo sur child (02/11/2018)
+- Correction person/search (02/11/2018)
+
+v0.7.2
+- Mise en place des redirections sur le display après un create/modify (02/11/2018)
+- Filtrage des données sur les list/search (02/11/2018)
+- Mise en place de "page" sur les search (02/11/2018)
+
+v0.7.1
+- Ajout d'un gestionnaire d'exceptions (02/11/2018)
+- Correction lors de l'ajout de child/person (02/11/2018)
+
+v0.7
+- Renommage des Routes `child_all` et `person_all` (01/11/2018)
+- Ajout de NelmioApiDocBundle (01/11/2018)
+- Mise en place des Tags Swagger (01/11/2018)
+- Mise en place des Forms pour les Address, Child et Person (01/11/2018)
+- Mise en place de la pagination sur les méthodes search (01/11/2018)
+
+v0.6.1
+- Correction Child + Person Search (31/10/2018)
+- Mise à jour des bundles pour la gestion des JWT (31/10/2018)
+
+v0.6
+- Correction de l'ajout d'une date de naissance pour les child pour accepter une chaîne (30/10/2018)
+- Suppression de l'envoi d'erreur lors de l'hydratation des objets (Child, etc.) pour permettre l'envoi d'autres paramètres (30/10/2018)
+- Ajout des méthodes manquantes sur les Interfaces des services (30/10/2018)
+- Correction de la récupération des données POST qui étaient fait les données GET (30/10/2018)
+- Correction des Routes de suppression (Child + Address) pour intégrer la table de liens (30/10/2018)
+- Ajout de la condition suppressed = 0 pour la recherche Child/Person/Address (30/10/2018)
+
+v0.5.5
+- Ajout de la gestion des sesions en DB (28/10/2018)
+
+v0.5.4
+- Ajout d'une condition sur les Voters pour vérifier si un user est authentifié (28/10/2018)
+- Ajout de HomeController (28/10/2018)
+
+v0.5.3
+- Ajout des bundles (twig, monolog, security, security-checker) enregistrés dans env=prod alors qu'appelés par require=dev (https://github.com/symfony/flex/issues/329) (28/10/2018)
+
+v0.5.2
+- Ajout des nouveaux rôles (28/10/2018)
+- Suppression de la hiérarchie des rôles (28/10/2018)
+
+v0.5.1
+- Mise en place de la gestion des CORS (27/10/2018)
+
+v0.5
+- Ajout de la fonctionanlité de recherchge pour Child et Person (24/10/2018)
+- Ajout du filtrage des json en fonction des rôles (24/10/2018)
+- Correction des appels de services utilisés pour la création/modification/suppression des adresses (24/10/2018)
+- Ajout du lien Address -> Person (24/10/2018)
+- Ajout du lien Person -> Child (24/10/2018)
+
+v0.4.2
+- Suppression de l'utilisation des voters en attendant la gestion des CORS (24/10/2018)
+
+v0.4.1
+- Correction ChildVoter si personne n'est lié à l'enfant (22/10/2018)
+
+v0.4
+- Remplacement de `AccessDecisionManagerInterface` par `Security` (22/10/2018)
+- Ajout de la gestion des droits pour les Child (22/10/2018)
+
+v0.3.1
+- Ajout données manquantes (20/10/2018)
+
+v0.3
+- Ajout de la gestion des utilisateurs (20/10/2018)
+- Ajout de la création des Child + Person (20/10/2018)
+- Ajout de la création/modification/suppression des adresses (20/10/2018)
+- Ajout de l'id de la personne modifiant/supprimant Child + Person (20/10/2018)
+- Ajout de la gestion des accès aux données par les Voter (20/10/2018)
+
+v0.2
+- Ajout des champs "suppressed", "SuppressedAt", "suppressedBy" (17/10/2018)
+- Ajout getters et setters manquants pour creationTrait (17/10/2018)
+- Ajout des possibilités de modification/suppression Child et Person (17/10/2018)
+
+v0.1.1
+- Ajout des champs "createdAt", "updatedAt", "createdBy" et "updatedBy" (17/10/2018)
+
+v0.1
+- Ajout des fichiers système (15/10/2018)

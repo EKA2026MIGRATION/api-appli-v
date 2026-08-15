@@ -1,0 +1,22 @@
+<VirtualHost *:80>
+    ServerAdmin sandyrazafitrimo@gmail.com
+    ServerName mysites
+
+    <Directory />
+            Options FollowSymLinks
+            AllowOverride None
+    </Directory>
+
+
+    # DocumentRoot: The directory out of which you will serve your
+    # documents. By default, all requests are taken from this directory, but
+    # symbolic links and aliases may be used to point to other locations.
+
+    DocumentRoot "/home/desperados/Sites/"
+
+    <Directory "/home/desperados/Sites/">
+            Options Indexes FollowSymLinks MultiViews
+            AllowOverride None
+            Require all granted
+    </Directory>
+</VirtualHost>
